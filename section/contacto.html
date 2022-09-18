@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');</style>
+</head>
+<body>
+    <header> 
+        <h1> Estudio Jurídico Núñez y Asoc.</h1>     
+        <nav>
+            <div>
+                <div>
+                    <ul>
+                        <li class="nav-item">
+                            <a href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./quienesSomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./laboral.html">Derecho Del Trabajo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./civil.html">Derecho Civil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2 id="info">Contacto</h2>
+        <div id="contacto">
+            <form action="https://formspree.io/f/mpzbrlnz" method="post" id="form">
+                <div class="mb-3" id="campo">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="mb-3" id="campo">
+                    <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="nombre@gmail.com" required>
+                </div>
+                <div class="mb-3" id="campo">
+                    <label for="numero" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="numero" aria-describedby="emailHelp" placeholder="000 0000000" required>
+                </div>
+                <div class="form-group" id="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" name="mensaje" id="mensaje" rows="3" placeholder="Dejame tu mensaje" required></textarea>
+                </div>
+                <div id="button">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="datos">
+            <div class="row">
+                <div class="detalles">
+                    <h4>Acercate a conocernos</h4>
+                    <p class="infoEstudio">Diagonal 74 N°1085 -La Plata, Buenos Aires</p>
+                    <p class="infoEstudio">(0221) 4240757</p>
+                </div>
+                <div class="detalles" id="redes"><h4>Nuestras redes</h4>
+                    <p>
+                    <a href="#" target="_blank"><img class="icon" src="../images/instagram-brands.svg" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img class="icon" id="facebook--brand" src="../images/facebook-f-brands.svg" alt="Facebook"></a>
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <div id="copy">
+            <i>Copyright © María Agustina Santucho 2022</i>
+        </div>
+    </footer>
+</body>
+</html>
