@@ -6,8 +6,8 @@ body{
     background-color: azure;
 }
 header {
-    background-image: url(../images/header-background.png);
-    color: aliceblue;
+    background-color: #ffb703;
+    color: black;
     text-align: center;
     background-size: cover;
 }
