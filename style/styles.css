@@ -97,8 +97,8 @@ h3{
     font-style: italic;
 }
 .little__container img{
-    width: 45%;
-    height: 55%;
+    width: 30%;
+    height: 20%;
 }
 .little__container{
     padding: 2%;
@@ -113,18 +113,25 @@ h3{
 .flex__container{
     display: grid;
     gap: 15px;
+    justify-content: center;
+    align-content: center;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "container_1"
     "container_2";
 }
+
 @media(min-width:500px){
     body{
         background-color: lightseagreen;
     }
+    .little__container{
+        padding: 2%;
+        margin: 2%;
+    }
     .little__container img{
-        width: 30%;
-        height: 35%;
+        width: 35%;
+        height: 40%;
     }
     .flex__container{
         display: grid;
@@ -259,12 +266,12 @@ h3{
 }
 footer{
     background-color: #3b3a30;
-    padding-left: 0%;
-    padding-right: 0%;
-    width: 100%;
-    margin-bottom: 0;
-    position: relative;
-    clear: both;
+    margin-left: 0;
+    margin-right: 0;
+}
+footer .row{
+    margin-left: 0;
+    margin-right: 0;
 }
 #datos{
     text-align: center;
