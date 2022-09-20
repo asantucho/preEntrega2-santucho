@@ -73,56 +73,6 @@ nav li {
 }
 h1{
     grid-area: h1;
-}
-.little__container img{
-    grid-area: imagen_abog;
-    width: 45%;
-    height: 55%;
-}
-.container_info h3{
-    grid-area: nombreAbogados;
-}
-.paragraph-1{
-    grid-area: paragraph-1;
-}
-.paragraph-2{
-    grid-area: paragraph-2;
-}
-.paragraph-3{
-    grid-area: paragraph-3;
-}
-.paragraph-4{
-    grid-area: paragraph-4;
-}
-.quienesSomosGrid h2{
-    grid-area: h2;
-}
-.quienesSomosGrid{
-    display: grid;
-    gap: 15px;
-    grid-template-areas: 
-    "h2"
-    "little__container"
-    "imagen_abog"
-    "nombreAgogados"
-    "paragraph-1"
-    "paragraph-2"
-    "paragraph-3"
-    "paragraph-4";
-    gap: 5vh;
-}
-.container_info{
-    display: flex;
-    flex-direction: column;
-    padding: 2%;
-    justify-content: center;
-}
-
-main{
-    margin: 0;
-    grid-area: main;
-}
-h1 {
     text-decoration: underline;
     padding: 2%;
 }
@@ -130,6 +80,7 @@ h2 {
     text-decoration: underline;
     text-align: center;
     padding: 1%;
+    grid-area: h2;
 }
 h3{
     text-decoration: underline;
@@ -145,6 +96,49 @@ h3{
     text-align: center;
     font-style: italic;
 }
+.little__container img{
+    width: 45%;
+    height: 55%;
+}
+.little__container{
+    padding: 2%;
+    margin: 2%;
+}
+.container_1{
+    grid-area: container_1;
+}
+.container_2{
+    grid-area: container_2;
+}
+.flex__container{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "container_1"
+    "container_2";
+}
+@media(min-width:500px){
+    body{
+        background-color: lightseagreen;
+    }
+    .little__container img{
+        width: 30%;
+        height: 35%;
+    }
+    .flex__container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "container_1 container_2";
+    }
+    .little__container{
+        border: solid black;
+    }
+}
+
 .container-mine{
     margin: 2%;
     padding: 2%;
@@ -268,7 +262,7 @@ footer{
     padding-left: 0%;
     padding-right: 0%;
     width: 100%;
-    bottom: 0;
+    margin-bottom: 0;
     position: relative;
     clear: both;
 }
