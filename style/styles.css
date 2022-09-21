@@ -1,19 +1,23 @@
 /*estilo comun a todos los html*/
 @import url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
+@font-face {
+    font-family: "California-Signature";
+    src: url(./California\ Signature\ Italic.otf);
+}
 *{
     margin: 0%;
     padding: 0%;
 }
 body{
     font-family: 'Bitter', sans-serif;
-    background-color: lightcoral;
+    background-color: #BEE3DB;
     text-align: center;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 header {
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,228,7,1) 0%, rgba(140,171,34,1) 100%);
+    background-color: #DEC1FF;
     color: black;
     text-align: center;
     grid-area: header;
@@ -28,26 +32,14 @@ nav a img:hover{
     0% {
         transform: scale(1.5);
     }
-    12.5%{
-        transform: rotate(45deg) scale(1.5);
-    }
     25% {
         transform: rotate(90deg) scale(1.5);
-    }
-    37.5%{
-        transform: rotate(135deg) scale(1.5);
     }
     50% {
         transform: rotate(180deg) scale(1.5);
     }
-    62.5%{
-        transform: rotate(225deg) scale(1.5);
-    }
     75% {
         transform: rotate(270deg) scale(1.5);
-    }
-    87.5%{
-        transform: rotate(305deg) scale(1.5);
     }
     100% {
         transform: rotate(360deg) scale(1.5);
@@ -74,9 +66,10 @@ nav li {
 }
 h1{
     grid-area: h1;
-    text-decoration: underline;
     padding: 2%;
-    font-weight: bolder;
+    font-family: California-Signature;
+    font-size: 500%;
+    font-weight: bold;
 }
 h2 {
     text-decoration: underline;
@@ -167,7 +160,7 @@ footer .row{
 
 @media(min-width:480px){
     body{
-        background-color: lightseagreen;
+        background-color: #89B0AE;
     }
     .little__container{
         padding: 2%;
@@ -191,7 +184,7 @@ footer .row{
 }
 @media(min-width:1024px){
     body{
-        background-color: lightcyan;
+        background-color: #9EC1A3;
     }
     .little__container{
         padding: 2%;
@@ -234,8 +227,8 @@ footer .row{
 .container-mine{
     margin: 2%;
     padding: 2%;
-    width: 92%;
-    background-color: bisque;
+    width: auto;
+    background-color: white;
 }
 .container-mine img{
     margin-left: auto;
@@ -249,6 +242,9 @@ footer .row{
     text-align: center;
 }
 /*Seccion civil.html. Grids y responsive con media queries*/
+.item{
+    border: solid black;
+}
 .item h5{
     text-decoration: underline;
     font-weight: bold;
