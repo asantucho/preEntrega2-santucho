@@ -235,7 +235,7 @@ footer .row{
     width: 92%;
     background-color: bisque;
 }
-.img__laboral{
+.container-mine img{
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -247,22 +247,6 @@ footer .row{
     text-align: center;
 }
 /*Seccion civil.html. Grids y responsive con media queries*/
-.containerGrid{
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: repeat (3, 1fr);
-    grid-template-areas: 
-    "item-1 item-1 item-1"
-    "item-2 item-3 item-4"
-    "item-5 item-6 item-7";
-    gap: 1vw;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 10%;
-    margin-left: 0%;
-}
 .item{
     text-align: center;
     margin: 0;
@@ -295,6 +279,59 @@ footer .row{
 }
 .item-7{
     grid-area: item-7;
+}
+.containerGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (7, 1fr);
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    "item-5" 
+    "item-6"
+    "item-7";
+    gap: 1vw;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+    margin-left: 0%;
+}
+@media (min-width:480px){
+    .containerGrid{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas: 
+        "item-1 item-1"
+        "item-2 item-3"
+        "item-4 item-5" 
+        "item-6 item-7";
+        gap: 1vw;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10%;
+        margin-left: 0%;
+    }
+}
+@media(min-width:1024px){
+    .containerGrid{
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-1"
+        "item-2 item-3 item-4"
+        "item-5 item-6 item-7";
+        gap: 1vw;
+        margin-bottom: 10%;
+        margin-left: 0%;
+    }
 }
 /*Seccion contacto.html*/
 #contacto{
