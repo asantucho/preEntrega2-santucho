@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
 @font-face {
     font-family: "California-Signature";
-    src: url(./California\ Signature\ Italic.otf);
+    src: url(../font/California\ Signature\ Italic.otf);
 }
 *{
     margin: 0%;
@@ -53,22 +53,25 @@ ul #navbarConteiner {
 nav li {
     text-align: center;
     display: inline;
-    color: goldenrod;
     font-weight: bold;
 }
 .nav-item{
     padding: 1%;
+    text-align: center;
 }
 .nav-item:hover{
     filter: opacity(0);
     filter: contrast(100%);
     background-color: #2a9d8f;
 }
+.navbar-nav {
+    align-items: center;
+}
 h1{
     grid-area: h1;
     padding: 1%;
     font-family: California-Signature;
-    font-size: 600%;
+    font-size: 300%;
     font-weight: bold;
     margin: 0%;
 }
@@ -168,6 +171,9 @@ footer .row{
     body{
         background-color: #A9D3FF;
     }
+    h1{
+        font-size: 450%;
+    }
     .little__container{
         padding: 2%;
         margin: 2%;
@@ -191,6 +197,12 @@ footer .row{
 @media(min-width:1024px){
     body{
         background-color: #9EC1A3;
+    }
+    h1{
+        font-size: 600%;
+    }
+    nav li{
+        width: 17vw;
     }
     .little__container{
         padding: 0%;
