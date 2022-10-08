@@ -1,0 +1,123 @@
+/*estilos comunes a todos los html*/
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Bitter', sans-serif;
+    background-color: #BEE3DB;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    background-color: #93ACB5;
+    color: black;
+    text-align: center;
+    grid-area: header;
+    h1{
+        grid-area: h1;
+        padding: 1%;
+        font-family: California-Signature;
+        font-size: 300%;
+        font-weight: bold;
+        margin: 0%;
+    }
+    nav{
+        div{
+            ul{
+                list-style-type: none;
+                padding: 0.5%;
+                text-align: center;
+                li{
+                    text-align: center;
+                    display: inline;
+                    font-weight: bold;
+                    padding: 1%;
+                }
+                li:hover{
+                    filter: opacity(0);
+                    filter: contrast(100%);
+                    background-color: #2a9d8f;
+                }
+                
+            }
+        }
+        a{
+            text-decoration: none;
+            img:hover{
+                animation: rotation 4s ease;
+            }
+            }
+        }
+    }
+@keyframes rotation {
+                0% {
+                    transform: scale(1.5);
+                }
+                25% {
+                    transform: rotate(90deg) scale(1.5);
+                }
+                50% {
+                    transform: rotate(180deg) scale(1.5);
+                }
+                75% {
+                    transform: rotate(270deg) scale(1.5);
+                }
+                100% {
+                    transform: rotate(360deg) scale(1.5);
+                }
+            }
+main{
+    h2 {
+        text-decoration: underline;
+        text-align: center;
+        padding: 1%;
+        grid-area: h2;
+        font-weight: bold;
+        margin: 0%;
+    }
+    h3{
+        text-decoration: underline;
+        text-align: center;
+        padding: 1%;
+        margin: 0%;
+    }
+}
+footer .row{
+    background-color: #3b3a30;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    column-count: 2;
+    color: #ced4da;
+    padding-top: 1%;
+    div .row{
+        .detalles{
+            .infoEstudio{
+                    font-size: 75%;
+                    padding-top: 1%;
+                }
+            p{
+                .icon{
+                width: 7%;
+                padding: 0.5%;
+                filter: invert(0.8);
+                .icon:hover{
+                    transform: scale(1.1);
+                    filter: opacity(1);
+                    transition: all 0.3s ease;
+                }
+                #facebook--brand{
+                    width: 5%;
+                }
+            }
+        }
+    }
+    #copy{
+        text-align: center;
+        color: #ced4da;
+        padding-top: 2%;
+    }
+}
