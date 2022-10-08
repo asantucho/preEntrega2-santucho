@@ -100,24 +100,29 @@ footer .row{
                     padding-top: 1%;
                 }
             p{
-                .icon{
-                width: 7%;
-                padding: 0.5%;
-                filter: invert(0.8);
-                .icon:hover{
-                    transform: scale(1.1);
-                    filter: opacity(1);
-                    transition: all 0.3s ease;
-                }
-                #facebook--brand{
-                    width: 5%;
+                a{
+                    img{
+                        .icon{
+                        width: 7%;
+                        padding: 0.5%;
+                        filter: invert(0.8);
+                        .icon:hover{
+                            transform: scale(1.1);
+                            filter: opacity(1);
+                            transition: all 0.3s ease;
+                        }
+                        #facebook--brand{
+                            width: 5%;
+                        }
                 }
             }
         }
     }
-    #copy{
-        text-align: center;
-        color: #ced4da;
-        padding-top: 2%;
+    }
+        #copy{
+            text-align: center;
+            color: #ced4da;
+            padding-top: 2%;
+        }
     }
 }

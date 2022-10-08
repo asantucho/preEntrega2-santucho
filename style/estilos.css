@@ -116,77 +116,42 @@ footer .row {
   color: #ced4da;
   padding-top: 1%;
 }
-footer .row div .row .infoEstudio {
+footer .row div .row .detalles .infoEstudio {
   font-size: 75%;
   padding-top: 1%;
 }
-
-#direccion {
-  font-size: 75%;
-}
-
-.infoEstudio {
-  padding-top: 1%;
-}
-
-.icon {
+footer .row div .row .detalles p a img .icon {
   width: 7%;
   padding: 0.5%;
   filter: invert(0.8);
 }
-
-#facebook--brand {
-  width: 5%;
-}
-
-.icon:hover {
+footer .row div .row .detalles p a img .icon .icon:hover {
   transform: scale(1.1);
   filter: opacity(1);
   transition: all 0.3s ease;
 }
-
-#copy {
+footer .row div .row .detalles p a img .icon #facebook--brand {
+  width: 5%;
+}
+footer .row div .row #copy {
   text-align: center;
   color: #ced4da;
   padding-top: 2%;
 }
 
-/*estilo de index.html*/
-.paragraph {
+/*estilos particulares al archivo index.html*/
+main .paragraph {
   text-align: justify;
   line-height: 250%;
   padding: 2%;
 }
-
-#quote {
+main #quote {
   text-align: center;
   font-style: italic;
 }
 
-/* Seccion quienesSomos.html, con flexbox, mobile first y medias queries*/
-.container_info {
-  background-color: white;
-}
-
-.container_info img {
-  width: 30%;
-  height: 20%;
-}
-
-.little__container {
-  padding: 2%;
-  margin: 2%;
-}
-
-.container_1 {
-  grid-area: container_1;
-}
-
-.container_2 {
-  grid-area: container_2;
-}
-
-.flex__container {
+/*estilos particulares del archivo quienesSomos.html*/
+main .flex__container {
   display: grid;
   gap: 15px;
   justify-content: center;
@@ -194,7 +159,25 @@ footer .row div .row .infoEstudio {
   grid-template-columns: 1fr;
   grid-template-areas: "container_1" "container_2";
 }
+main .flex__container .container_1 {
+  grid-area: container_1;
+}
+main .flex__container .container_2 {
+  grid-area: container_2;
+}
+main .flex__container .little_container {
+  padding: 2%;
+  margin: 2%;
+}
+main .flex__container .little_container .container_info {
+  background-color: white;
+}
+main .flex__container .little_container .container_info img {
+  width: 30%;
+  height: 20%;
+}
 
+/* Seccion quienesSomos.html, con flexbox, mobile first y medias queries*/
 @media (min-width: 480px) {
   body {
     background-color: #A9D3FF;

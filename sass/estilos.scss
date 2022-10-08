@@ -1,34 +1,9 @@
 @import "fuentes";
 @import "generales";
 @import "index";
+@import "quienesSomos";
 /* Seccion quienesSomos.html, con flexbox, mobile first y medias queries*/
-.container_info{
-    background-color: white;
-}
-.container_info img{
-    width: 30%;
-    height: 20%;
-}
-.little__container{
-    padding: 2%;
-    margin: 2%;
-}
-.container_1{
-    grid-area: container_1;
-}
-.container_2{
-    grid-area: container_2;
-}
-.flex__container{
-    display: grid;
-    gap: 15px;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "container_1"
-    "container_2";
-}
+
 
 @media(min-width:480px){
     body{
