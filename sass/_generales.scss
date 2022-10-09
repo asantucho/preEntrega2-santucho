@@ -1,11 +1,10 @@
-/*estilos comunes a todos los html*/
+/*mobile first y estilos comunes a todos los html*/
 *{
     margin: 0%;
     padding: 0%;
 }
 body{
     font-family: 'Bitter', sans-serif;
-    background-color: #BEE3DB;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -20,7 +19,6 @@ header {
         grid-area: h1;
         padding: 1%;
         font-family: California-Signature;
-        font-size: 300%;
         font-weight: bold;
         margin: 0%;
     }
