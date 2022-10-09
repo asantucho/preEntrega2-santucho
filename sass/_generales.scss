@@ -1,35 +1,32 @@
 /*mobile first y estilos comunes a todos los html*/
 *{
-    margin: 0%;
-    padding: 0%;
+    @include box (0%, 0%);
 }
 body{
     font-family: 'Bitter', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    text-align: $align;
+    @extend .extendFlex;
     min-height: 100vh;
 }
 header {
-    background-color: #93ACB5;
+    background-color: $color;
     color: black;
-    text-align: center;
+    text-align: $align;
     grid-area: header;
     h1{
+        @include box (0%, 1%);
         grid-area: h1;
-        padding: 1%;
         font-family: California-Signature;
         font-weight: bold;
-        margin: 0%;
     }
     nav{
         div{
             ul{
                 list-style-type: none;
                 padding: 0.5%;
-                text-align: center;
+                text-align: $align;
                 li{
-                    text-align: center;
+                    text-align: $align;
                     display: inline;
                     font-weight: bold;
                     padding: 1%;
@@ -69,18 +66,16 @@ header {
             }
 main{
     h2 {
+        @include box (0%, 1%);
         text-decoration: underline;
-        text-align: center;
-        padding: 1%;
+        text-align: $align;
         grid-area: h2;
         font-weight: bold;
-        margin: 0%;
     }
     h3{
+        @include box (0%, 1%);
         text-decoration: underline;
-        text-align: center;
-        padding: 1%;
-        margin: 0%;
+        text-align: $align;
     }
 }
 footer{
@@ -90,38 +85,45 @@ footer{
     text-align: center;
     color: #ced4da;
     padding-top: 1%;
-}
-.pieDePagina{
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-    color: #ced4da;
-    padding-top: 1%;
-}
-.infoEstudio{
-    font-size: 90%;
-    padding-top: 1%;
-}
-
-div p a img{
-    width: 7%;
-    padding: 0.5%;
-    filter: invert(0.8);
-}                     
-div p a img:hover{
-    transform: scale(1.1);
-    filter: opacity(1);
-    transition: all 0.3s ease;
-}                   
-#facebook--brand{
-    width: 5%;
-}
-.copyright {
-    margin-left: 0;
-    margin-right: 0;
-}
-#copy{
-    text-align: center;
-    color: #ced4da;
-    padding-top: 2%
+    .pieDePagina{
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        color: #ced4da;
+        padding-top: 1%;
+        .detalles{
+            .infoEstudio{
+                font-size: 90%;
+                padding-top: 1%;
+            }
+        }
+        .redes{
+            p{
+                a{
+                    img{
+                        width: 7%;
+                        padding: 0.5%;
+                        filter: invert(0.8);
+                    }
+                    img:hover{
+                        transform: scale(1.1);
+                        filter: opacity(1);
+                        transition: all 0.3s ease;
+                    }
+                    #facebook--brand{
+                        width: 5%;
+                    }
+                }
+            }
+        }               
+    }
+    .copyright {
+        margin-left: 0;
+        margin-right: 0;
+        #copy{
+            text-align: $align;
+            color: #ced4da;
+            padding-top: 2%
+        }
+    }
 }

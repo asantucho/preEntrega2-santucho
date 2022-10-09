@@ -1,11 +1,11 @@
+/*estilos civil.html*/
 .item{
     border: solid black;
     display: flex;
     flex-direction: column;
     padding: 2%;
     background-color: white;
-    width: auto;
-    height: 100%;
+    @include size (100%, auto)
 }
 .item h5{
     text-decoration: underline;
@@ -13,8 +13,7 @@
 }
 .item-1{
     grid-area: item-1;
-    padding: 1%;
-    margin: 0%;
+    @include box (0%, 1%);
 }
 .item-2{
     grid-area: item-2;

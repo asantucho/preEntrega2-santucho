@@ -1,0 +1,28 @@
+/*Variables, clases para extends y mixins*/
+
+/*variables*/
+$color: #93ACB5;
+$margin: 0%;
+$align: center;
+
+/*extends*/
+.extendFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.extendGrids{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+/*mixin*/
+@mixin size ($height, $width){
+    height: $height;
+    width: $width;
+}
+@mixin box ($margin, $padding){
+    margin: $margin;
+    padding: $padding;
+}
