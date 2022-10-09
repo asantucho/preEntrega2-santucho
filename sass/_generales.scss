@@ -85,7 +85,7 @@ main{
         margin: 0%;
     }
 }
-footer .row{
+footer{
     background-color: #3b3a30;
     margin-left: 0;
     margin-right: 0;
@@ -93,33 +93,39 @@ footer .row{
     column-count: 2;
     color: #ced4da;
     padding-top: 1%;
-    div .row{
+    .pieDePagina{
+        margin-left: 0;
+        margin-right: 0;
         .detalles{
             .infoEstudio{
-                    font-size: 75%;
+                    font-size: 90%;
                     padding-top: 1%;
                 }
-            p{
+            }
+        .redes{
+            p {
                 a{
                     img{
-                        .icon{
                         width: 7%;
                         padding: 0.5%;
                         filter: invert(0.8);
-                        .icon:hover{
+                        }
+                    img:hover{
                             transform: scale(1.1);
                             filter: opacity(1);
                             transition: all 0.3s ease;
                         }
-                        #facebook--brand{
-                            width: 5%;
-                        }
+                    img #facebook--brand{
+                        width: 5%;
+                    }
                 }
             }
         }
     }
-    }
-        #copy{
+    .copyright {
+        margin-left: 0;
+        margin-right: 0;
+        div #copy{
             text-align: center;
             color: #ced4da;
             padding-top: 2%;

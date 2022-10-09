@@ -106,7 +106,7 @@ main h3 {
   margin: 0%;
 }
 
-footer .row {
+footer {
   background-color: #3b3a30;
   margin-left: 0;
   margin-right: 0;
@@ -116,24 +116,32 @@ footer .row {
   color: #ced4da;
   padding-top: 1%;
 }
-footer .row div .row .detalles .infoEstudio {
-  font-size: 75%;
+footer .pieDePagina {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .pieDePagina .detalles .infoEstudio {
+  font-size: 90%;
   padding-top: 1%;
 }
-footer .row div .row .detalles p a img .icon {
+footer .pieDePagina .redes p a img {
   width: 7%;
   padding: 0.5%;
   filter: invert(0.8);
 }
-footer .row div .row .detalles p a img .icon .icon:hover {
+footer .pieDePagina .redes p a img:hover {
   transform: scale(1.1);
   filter: opacity(1);
   transition: all 0.3s ease;
 }
-footer .row div .row .detalles p a img .icon #facebook--brand {
+footer .pieDePagina .redes p a img #facebook--brand {
   width: 5%;
 }
-footer .row div .row #copy {
+footer .copyright {
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .copyright div #copy {
   text-align: center;
   color: #ced4da;
   padding-top: 2%;
@@ -159,22 +167,24 @@ main .flex__container {
   grid-template-columns: 1fr;
   grid-template-areas: "container_1" "container_2";
 }
-main .flex__container .container_1 {
-  grid-area: container_1;
-}
-main .flex__container .container_2 {
-  grid-area: container_2;
-}
-main .flex__container .little_container {
+main .flex__container div .little_container {
   padding: 2%;
   margin: 2%;
 }
-main .flex__container .little_container .container_info {
+main .flex__container div .little_container .container_info {
   background-color: white;
 }
-main .flex__container .little_container .container_info img {
+main .flex__container div .little_container .container_info img {
   width: 30%;
   height: 20%;
+}
+
+div .container_1 {
+  grid-area: container_1;
+}
+
+div .container_2 {
+  grid-area: container_2;
 }
 
 /* Seccion quienesSomos.html, con flexbox, mobile first y medias queries*/

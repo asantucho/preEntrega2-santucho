@@ -9,13 +9,7 @@ main{
         grid-template-areas: 
         "container_1"
         "container_2";
-        .container_1{
-            grid-area: container_1;
-        }
-        .container_2{
-            grid-area: container_2;
-        }
-        .little_container{
+        div .little_container{
             padding: 2%;
             margin: 2%;
             .container_info{
@@ -28,3 +22,9 @@ main{
             }
         }
     }
+div .container_1{
+    grid-area: container_1;
+}
+div .container_2{
+    grid-area: container_2;
+}
