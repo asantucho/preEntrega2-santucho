@@ -1,0 +1,36 @@
+.item{
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    background-color: white;
+    width: auto;
+    height: 100%;
+}
+.item h5{
+    text-decoration: underline;
+    font-weight: bold;
+}
+.item-1{
+    grid-area: item-1;
+    padding: 1%;
+    margin: 0%;
+}
+.item-2{
+    grid-area: item-2;
+}
+.item-3{
+    grid-area: item-3;
+}
+.item-4{
+    grid-area: item-4;
+}
+.item-5{
+    grid-area: item-5;
+}
+.item-6{
+    grid-area: item-6;
+}
+.item-7{
+    grid-area: item-7;
+}

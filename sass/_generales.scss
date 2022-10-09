@@ -88,45 +88,40 @@ footer{
     margin-left: 0;
     margin-right: 0;
     text-align: center;
-    column-count: 2;
     color: #ced4da;
     padding-top: 1%;
-    .pieDePagina{
-        margin-left: 0;
-        margin-right: 0;
-        .detalles{
-            .infoEstudio{
-                    font-size: 90%;
-                    padding-top: 1%;
-                }
-            }
-        .redes{
-            p {
-                a{
-                    img{
-                        width: 7%;
-                        padding: 0.5%;
-                        filter: invert(0.8);
-                        }
-                    img:hover{
-                            transform: scale(1.1);
-                            filter: opacity(1);
-                            transition: all 0.3s ease;
-                        }
-                    img #facebook--brand{
-                        width: 5%;
-                    }
-                }
-            }
-        }
-    }
-    .copyright {
-        margin-left: 0;
-        margin-right: 0;
-        div #copy{
-            text-align: center;
-            color: #ced4da;
-            padding-top: 2%;
-        }
-    }
+}
+.pieDePagina{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    color: #ced4da;
+    padding-top: 1%;
+}
+.infoEstudio{
+    font-size: 90%;
+    padding-top: 1%;
+}
+
+div p a img{
+    width: 7%;
+    padding: 0.5%;
+    filter: invert(0.8);
+}                     
+div p a img:hover{
+    transform: scale(1.1);
+    filter: opacity(1);
+    transition: all 0.3s ease;
+}                   
+#facebook--brand{
+    width: 5%;
+}
+.copyright {
+    margin-left: 0;
+    margin-right: 0;
+}
+#copy{
+    text-align: center;
+    color: #ced4da;
+    padding-top: 2%
 }

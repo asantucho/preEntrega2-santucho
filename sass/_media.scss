@@ -1,4 +1,5 @@
 /*tags responsive con media queries*/ 
+/*etiquetas comunes a todos los html*/
 body{
     background-color: #BEE3DB;
     @media(min-width:480px){
@@ -18,7 +19,145 @@ h1{
     }
 }
 nav li{
-    @media(min-width:1024px){
+    @media(min-width:992px){
         width: 17vw;
+    }
+}
+/*quienesSomos.html*/
+.flex__container{
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "container_1"
+    "container_2";
+    @media(min-width:480px){
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "container_1 container_2";
+    }
+    @media(min-width:1024px){
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "container_1"
+        "container_2";
+        margin: 2%;
+        gap: 2vw;
+    }
+}
+
+.little_container{
+    padding: 2%;
+    margin: 2%;
+    @media(min-width:480px){
+        padding: 2%;
+        margin: 2%;
+        border: solid black;
+    }
+    @media(min-width:1024px){
+        padding: 0%;
+        margin: 0%;
+        border: none;
+    }
+}
+.container_info{
+    @media(min-width:480px){
+        border: solid black;
+        padding: 3%;
+    }
+    @media(min-width:1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 2%;
+        margin:2%;
+        text-align: justify;
+        border: solid black;
+        background-color: white;
+    }
+    img {
+        width: 30%;
+        height: 20%;
+        @media(min-width:480px) {
+            width: 40%;
+            height: 40%;
+        }
+        @media(min-width:1024px){
+            width: 20%;
+            height: 25%;
+            padding: 1%;
+            padding-top: 3%;
+        }
+    }
+    .descripcion{
+        @media(min-width:1024px){
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: justify;
+            justify-content: center;
+        }
+        h3 {
+            @media(min-width:1024px){
+                text-align: left;
+                padding-left: 0%;
+            }
+        }
+    }
+}
+/*civil.html*/
+.containerGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat (7, 1fr);
+    grid-template-areas: 
+    "item-1"
+    "item-2"
+    "item-3"
+    "item-4"
+    "item-5" 
+    "item-6"
+    "item-7";
+    gap: 1vw;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+    margin-left: 0%;
+    padding: 0%;
+    @media(min-width:480px){
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat (6, 1fr);
+        grid-template-areas: 
+        "item-1 item-1"
+        "item-2 item-3"
+        "item-4 item-5" 
+        "item-6 item-7";
+        gap: 1vw;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 10%;
+        margin-left: 0%;
+    }
+    @media(min-width:1024px){
+        display: grid;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "item-1 item-1 item-1"
+        "item-2 item-3 item-4"
+        "item-5 item-6 item-7";
+        gap: 1vw;
+        margin-bottom: 10%;
+        margin-left: 0%;
     }
 }

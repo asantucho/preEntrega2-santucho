@@ -1,27 +1,4 @@
 /*estilos particulares del archivo quienesSomos.html*/
-main{
-    .flex__container{
-        display: grid;
-        gap: 15px;
-        justify-content: center;
-        align-content: center;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "container_1"
-        "container_2";
-        div .little_container{
-            padding: 2%;
-            margin: 2%;
-            .container_info{
-                background-color: white;
-                img {
-                    width: 30%;
-                    height: 20%;
-                }
-            }
-            }
-        }
-    }
 div .container_1{
     grid-area: container_1;
 }

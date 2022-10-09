@@ -109,43 +109,52 @@ footer {
   margin-left: 0;
   margin-right: 0;
   text-align: center;
-  -moz-column-count: 2;
-       column-count: 2;
   color: #ced4da;
   padding-top: 1%;
 }
-footer .pieDePagina {
+
+.pieDePagina {
   margin-left: 0;
   margin-right: 0;
+  text-align: center;
+  color: #ced4da;
+  padding-top: 1%;
 }
-footer .pieDePagina .detalles .infoEstudio {
+
+.infoEstudio {
   font-size: 90%;
   padding-top: 1%;
 }
-footer .pieDePagina .redes p a img {
+
+div p a img {
   width: 7%;
   padding: 0.5%;
   filter: invert(0.8);
 }
-footer .pieDePagina .redes p a img:hover {
+
+div p a img:hover {
   transform: scale(1.1);
   filter: opacity(1);
   transition: all 0.3s ease;
 }
-footer .pieDePagina .redes p a img #facebook--brand {
+
+#facebook--brand {
   width: 5%;
 }
-footer .copyright {
+
+.copyright {
   margin-left: 0;
   margin-right: 0;
 }
-footer .copyright div #copy {
+
+#copy {
   text-align: center;
   color: #ced4da;
   padding-top: 2%;
 }
 
 /*tags responsive con media queries*/
+/*etiquetas comunes a todos los html*/
 body {
   background-color: #BEE3DB;
 }
@@ -174,9 +183,149 @@ h1 {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   nav li {
     width: 17vw;
+  }
+}
+
+/*quienesSomos.html*/
+.flex__container {
+  display: grid;
+  gap: 15px;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 1fr;
+  grid-template-areas: "container_1" "container_2";
+}
+@media (min-width: 480px) {
+  .flex__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "container_1 container_2";
+  }
+}
+@media (min-width: 1024px) {
+  .flex__container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "container_1" "container_2";
+    margin: 2%;
+    gap: 2vw;
+  }
+}
+
+.little_container {
+  padding: 2%;
+  margin: 2%;
+}
+@media (min-width: 480px) {
+  .little_container {
+    padding: 2%;
+    margin: 2%;
+    border: solid black;
+  }
+}
+@media (min-width: 1024px) {
+  .little_container {
+    padding: 0%;
+    margin: 0%;
+    border: none;
+  }
+}
+
+@media (min-width: 480px) {
+  .container_info {
+    border: solid black;
+    padding: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  .container_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 2%;
+    margin: 2%;
+    text-align: justify;
+    border: solid black;
+    background-color: white;
+  }
+}
+.container_info img {
+  width: 30%;
+  height: 20%;
+}
+@media (min-width: 480px) {
+  .container_info img {
+    width: 40%;
+    height: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .container_info img {
+    width: 20%;
+    height: 25%;
+    padding: 1%;
+    padding-top: 3%;
+  }
+}
+@media (min-width: 1024px) {
+  .container_info .descripcion {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .container_info .descripcion h3 {
+    text-align: left;
+    padding-left: 0%;
+  }
+}
+
+/*civil.html*/
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 7, 1fr;
+  grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5" "item-6" "item-7";
+  gap: 1vw;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10%;
+  margin-left: 0%;
+  padding: 0%;
+}
+@media (min-width: 480px) {
+  .containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 6, 1fr;
+    grid-template-areas: "item-1 item-1" "item-2 item-3" "item-4 item-5" "item-6 item-7";
+    gap: 1vw;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10%;
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1024px) {
+  .containerGrid {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "item-1 item-1 item-1" "item-2 item-3 item-4" "item-5 item-6 item-7";
+    gap: 1vw;
+    margin-bottom: 10%;
+    margin-left: 0%;
   }
 }
 
@@ -192,26 +341,6 @@ main #quote {
 }
 
 /*estilos particulares del archivo quienesSomos.html*/
-main .flex__container {
-  display: grid;
-  gap: 15px;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: 1fr;
-  grid-template-areas: "container_1" "container_2";
-}
-main .flex__container div .little_container {
-  padding: 2%;
-  margin: 2%;
-}
-main .flex__container div .little_container .container_info {
-  background-color: white;
-}
-main .flex__container div .little_container .container_info img {
-  width: 30%;
-  height: 20%;
-}
-
 div .container_1 {
   grid-area: container_1;
 }
@@ -237,6 +366,51 @@ main .container-mine .laboral__details {
   padding-left: 5%;
   padding-right: 5%;
   text-align: center;
+}
+
+.item {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: white;
+  width: auto;
+  height: 100%;
+}
+
+.item h5 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.item-1 {
+  grid-area: item-1;
+  padding: 1%;
+  margin: 0%;
+}
+
+.item-2 {
+  grid-area: item-2;
+}
+
+.item-3 {
+  grid-area: item-3;
+}
+
+.item-4 {
+  grid-area: item-4;
+}
+
+.item-5 {
+  grid-area: item-5;
+}
+
+.item-6 {
+  grid-area: item-6;
+}
+
+.item-7 {
+  grid-area: item-7;
 }
 
 /*estilos formulario de contacto*/
@@ -296,152 +470,4 @@ main .contacto form #button button {
   color: #fff;
   background-color: magenta;
   border-color: pink;
-}
-
-/* Seccion quienesSomos.html, con flexbox, mobile first y medias queries*/
-@media (min-width: 480px) {
-  .little__container {
-    padding: 2%;
-    margin: 2%;
-  }
-  .container_info img {
-    width: 35%;
-    height: 40%;
-  }
-  .flex__container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "container_1 container_2";
-  }
-  .little__container {
-    border: solid black;
-  }
-}
-@media (min-width: 1024px) {
-  .little__container {
-    padding: 0%;
-    margin: 0%;
-    border: none;
-  }
-  .container_info img {
-    width: 20%;
-    height: 25%;
-    padding: 1%;
-    padding-top: 3%;
-  }
-  .flex__container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-areas: "container_1" "container_2";
-    margin: 2%;
-    gap: 2vw;
-  }
-  .container_info {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding: 2%;
-    margin: 2%;
-    text-align: justify;
-    border: solid black;
-  }
-  .descripcion {
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: justify;
-    justify-content: center;
-  }
-  .descripcion h3 {
-    text-align: left;
-    padding-left: 0%;
-  }
-}
-/*Seccion civil.html. Grids y responsive con media queries*/
-.item {
-  border: solid black;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  background-color: white;
-  width: auto;
-  height: 100%;
-}
-
-.item h5 {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.item-1 {
-  grid-area: item-1;
-  padding: 1%;
-  margin: 0%;
-}
-
-.item-2 {
-  grid-area: item-2;
-}
-
-.item-3 {
-  grid-area: item-3;
-}
-
-.item-4 {
-  grid-area: item-4;
-}
-
-.item-5 {
-  grid-area: item-5;
-}
-
-.item-6 {
-  grid-area: item-6;
-}
-
-.item-7 {
-  grid-area: item-7;
-}
-
-.containerGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat 7, 1fr;
-  grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5" "item-6" "item-7";
-  gap: 1vw;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 10%;
-  margin-left: 0%;
-  padding: 0%;
-}
-
-@media (min-width: 480px) {
-  .containerGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat 6, 1fr;
-    grid-template-areas: "item-1 item-1" "item-2 item-3" "item-4 item-5" "item-6 item-7";
-    gap: 1vw;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    margin-bottom: 10%;
-    margin-left: 0%;
-  }
-}
-@media (min-width: 1024px) {
-  .containerGrid {
-    display: grid;
-    grid-template-rows: 0.2fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "item-1 item-1 item-1" "item-2 item-3 item-4" "item-5 item-6 item-7";
-    gap: 1vw;
-    margin-bottom: 10%;
-    margin-left: 0%;
-  }
 }/*# sourceMappingURL=estilos.css.map */
