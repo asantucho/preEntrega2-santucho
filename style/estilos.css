@@ -57,7 +57,7 @@ header nav div ul li {
 header nav div ul li:hover {
   filter: opacity(0);
   filter: contrast(100%);
-  background-color: #2a9d8f;
+  background-color: goldenrod;
 }
 header nav a {
   text-decoration: none;
@@ -162,16 +162,16 @@ footer .copyright #copy {
 /*tags responsive con media queries*/
 /*etiquetas comunes a todos los html*/
 body {
-  background-color: #BEE3DB;
+  background-color: #FEFDFF;
 }
 @media (min-width: 480px) {
   body {
-    background-color: #A9D3FF;
+    background-color: #e7efc5;
   }
 }
 @media (min-width: 1024px) {
   body {
-    background-color: #9EC1A3;
+    background-color: #DADDD8;
   }
 }
 
@@ -255,19 +255,19 @@ h1 {
   }
 }
 .container_info img {
-  width: 30%;
   height: 20%;
+  width: 30%;
 }
 @media (min-width: 480px) {
   .container_info img {
-    width: 40%;
     height: 40%;
+    width: 40%;
   }
 }
 @media (min-width: 1024px) {
   .container_info img {
-    width: 20%;
     height: 25%;
+    width: 20%;
     padding: 1%;
     padding-top: 3%;
   }
@@ -325,7 +325,7 @@ h1 {
 main .paragraph {
   text-align: justify;
   line-height: 250%;
-  padding: 2%;
+  padding: 4%;
 }
 main #quote {
   text-align: center;
@@ -370,8 +370,7 @@ main .container-mine .laboral__details {
   height: 100%;
   width: auto;
 }
-
-.item h5 {
+.item .item h5 {
   text-decoration: underline;
   font-weight: bold;
 }
@@ -449,7 +448,6 @@ main .contacto form #button button {
   display: inline-block;
   font-weight: bold;
   line-height: 1.5;
-  color: black;
   text-align: right;
   text-decoration: none;
   vertical-align: middle;
@@ -463,4 +461,7 @@ main .contacto form #button button {
   color: black;
   background-color: #93ACB5;
   border-color: black;
+}
+main .contacto form #button button:focus {
+  background-color: goldenrod;
 }/*# sourceMappingURL=estilos.css.map */

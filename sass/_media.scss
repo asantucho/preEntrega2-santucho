@@ -1,12 +1,12 @@
 /*tags responsive con media queries*/ 
 /*etiquetas comunes a todos los html*/
 body{
-    background-color: #BEE3DB;
+    background-color: #FEFDFF;
     @media(min-width:480px){
-        background-color: #A9D3FF;
+        background-color: #e7efc5;
     }
     @media(min-width:1024px){
-        background-color: #9EC1A3;
+        background-color: #DADDD8;
     }
 }
 h1{
@@ -74,15 +74,12 @@ nav li{
         background-color: white;
     }
     img {
-        width: 30%;
-        height: 20%;
+        @include size (20%, 30%);
         @media(min-width:480px) {
-            width: 40%;
-            height: 40%;
+            @include size (40%, 40%);
         }
         @media(min-width:1024px){
-            width: 20%;
-            height: 25%;
+            @include size (25%, 20%);
             padding: 1%;
             padding-top: 3%;
         }

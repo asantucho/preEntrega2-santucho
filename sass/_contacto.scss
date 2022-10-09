@@ -40,7 +40,6 @@ main{
                     display: inline-block;
                     font-weight: bold;
                     line-height: 1.5;
-                    color: black;
                     text-align: right;
                     text-decoration: none;
                     vertical-align: middle;
@@ -54,6 +53,9 @@ main{
                     color: black;
                     background-color: $color;
                     border-color: black;
+                }
+                button:focus{
+                    background-color: goldenrod;
                 }
             }
         }
