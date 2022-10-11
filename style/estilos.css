@@ -79,6 +79,12 @@ body header nav div ul {
   padding: 0.5%;
   text-align: center;
 }
+@media (min-width: 992px) {
+  body header nav div ul {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 body header nav div ul li {
   text-align: center;
   display: inline;
@@ -381,50 +387,6 @@ main #quote {
 }
 
 /*estilos civil.html*/
-.item {
-  border: solid black;
-  display: flex;
-  flex-direction: column;
-  padding: 2%;
-  background-color: white;
-  height: 100%;
-  width: auto;
-}
-.item .item h5 {
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.item-1 {
-  grid-area: item-1;
-  margin: 0%;
-  padding: 1%;
-}
-
-.item-2 {
-  grid-area: item-2;
-}
-
-.item-3 {
-  grid-area: item-3;
-}
-
-.item-4 {
-  grid-area: item-4;
-}
-
-.item-5 {
-  grid-area: item-5;
-}
-
-.item-6 {
-  grid-area: item-6;
-}
-
-.item-7 {
-  grid-area: item-7;
-}
-
 .containerGrid {
   grid-template-columns: 1fr;
   grid-template-rows: repeat 7, 1fr;
@@ -433,6 +395,24 @@ main #quote {
   margin-bottom: 10%;
   margin-left: 0%;
   padding: 0%;
+}
+.containerGrid .item-2 {
+  grid-area: item-2;
+}
+.containerGrid .item-3 {
+  grid-area: item-3;
+}
+.containerGrid .item-4 {
+  grid-area: item-4;
+}
+.containerGrid .item-5 {
+  grid-area: item-5;
+}
+.containerGrid .item-6 {
+  grid-area: item-6;
+}
+.containerGrid .item-7 {
+  grid-area: item-7;
 }
 @media (min-width: 480px) {
   .containerGrid {
@@ -455,6 +435,24 @@ main #quote {
     margin-bottom: 10%;
     margin-left: 0%;
   }
+}
+.containerGrid .item-1 {
+  grid-area: item-1;
+  margin: 0%;
+  padding: 1%;
+}
+.containerGrid .item {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: white;
+  height: 100%;
+  width: auto;
+}
+.containerGrid .item .item h5 {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*estilos formulario de contacto*/
