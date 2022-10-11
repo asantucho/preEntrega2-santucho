@@ -1,14 +1,21 @@
 .container-mine{
-    @include box (2%, 2%);
     width: auto;
     background-color: white;
-    @media (max-width:480px){
-        @include box (2%, 1%);
-        h3 {
-            @include box (0.5%, 0.5%);
-        }
+    width: auto;
+    background-color: white;
+    @include box (2%, 1%);
+    h3 {
+        @include box (0.5%, 0.5%);
+    }
+    .laboral__details{
+        @include box (0.5%, 0.3%)
+    }
+    @media (min-width:480px){
+        @include box (2%, 2%);
         .laboral__details{
-            @include box (0.5%, 0.3%)
+            padding-left: 5%;
+            padding-right: 5%;
+            text-align: $align;
         }
     }
     img {
@@ -19,13 +26,11 @@
         @media (min-width:480px){
             width: 20%;
         }
+        @media (min-width:768px){
+            width: 25%;
+        }
         @media (min-width:1024px){
             width: 20%;
         }
-    }
-    .laboral__details{
-        padding-left: 5%;
-        padding-right: 5%;
-        text-align: $align;
     }
 }

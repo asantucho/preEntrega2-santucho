@@ -93,7 +93,7 @@ body header nav div ul li {
 body header nav div ul li:hover {
   filter: opacity(0);
   filter: contrast(100%);
-  background-color: goldenrod;
+  background-color: #8d1812;
 }
 body header nav a {
   text-decoration: none;
@@ -137,8 +137,8 @@ body header nav a img:hover {
   }
 }
 body main h2 {
-  margin: 2%;
-  padding: 1%;
+  margin: 1.5%;
+  padding: 0.5%;
   text-decoration: underline;
   text-align: center;
   grid-area: h2;
@@ -197,17 +197,18 @@ body footer .pieDePagina .detalles .infoEstudio {
   padding-top: 1%;
 }
 body footer .pieDePagina .redes p a img {
-  width: 7%;
+  width: 5%;
   padding: 0.5%;
+  margin: 1%;
   filter: invert(0.8);
 }
 body footer .pieDePagina .redes p a img:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
   filter: opacity(1);
   transition: all 0.3s ease;
 }
 body footer .pieDePagina .redes p a #facebook--brand {
-  width: 5%;
+  width: 3.5%;
 }
 body footer .copyright {
   margin-left: 0;
@@ -223,7 +224,10 @@ body footer .copyright #copy {
 main .paragraph {
   text-align: justify;
   line-height: 250%;
-  padding: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 main #quote {
   text-align: center;
@@ -328,23 +332,30 @@ main #quote {
 }
 
 .container-mine {
-  margin: 2%;
-  padding: 2%;
   width: auto;
   background-color: white;
+  width: auto;
+  background-color: white;
+  margin: 2%;
+  padding: 1%;
 }
-@media (max-width: 480px) {
+.container-mine h3 {
+  margin: 0.5%;
+  padding: 0.5%;
+}
+.container-mine .laboral__details {
+  margin: 0.5%;
+  padding: 0.3%;
+}
+@media (min-width: 480px) {
   .container-mine {
     margin: 2%;
-    padding: 1%;
-  }
-  .container-mine h3 {
-    margin: 0.5%;
-    padding: 0.5%;
+    padding: 2%;
   }
   .container-mine .laboral__details {
-    margin: 0.5%;
-    padding: 0.3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
   }
 }
 .container-mine img {
@@ -358,15 +369,15 @@ main #quote {
     width: 20%;
   }
 }
+@media (min-width: 768px) {
+  .container-mine img {
+    width: 25%;
+  }
+}
 @media (min-width: 1024px) {
   .container-mine img {
     width: 20%;
   }
-}
-.container-mine .laboral__details {
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: center;
 }
 
 /*estilos civil.html*/
@@ -504,5 +515,5 @@ main .contacto form #button button {
   border-color: black;
 }
 main .contacto form #button button:focus {
-  background-color: goldenrod;
+  background-color: #8d1812;
 }/*# sourceMappingURL=estilos.css.map */
