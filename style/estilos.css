@@ -3,6 +3,7 @@
 /*extends*/
 @import url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bitter&family=Inter&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
 .extendFlex, body {
   display: flex;
   flex-direction: column;
@@ -15,13 +16,21 @@
 }
 
 /*mixin*/
-* {
-  font-family: "Inter", sans-serif;
-}
-
 @font-face {
   font-family: "California-Signature";
   src: url(../font/California\ Signature\ Italic.otf);
+}
+@font-face {
+  font-family: "Domine";
+  src: url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
+}
+@font-face {
+  font-family: "Bitter";
+  src: url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
+}
+@font-face {
+  font-family: "Inter";
+  src: url(https://fonts.googleapis.com/css2?family=Bitter&family=Inter&display=swap);
 }
 /*estilos comunes a todos los html*/
 * {
@@ -30,7 +39,6 @@
 }
 
 body {
-  font-family: "Bitter", sans-serif;
   text-align: center;
   min-height: 100vh;
   background-color: #FEFDFF;
@@ -46,7 +54,7 @@ body {
   }
 }
 body header {
-  background-color: #93ACB5;
+  background-color: #022444;
   color: black;
   text-align: center;
   grid-area: header;
@@ -56,8 +64,8 @@ body header h1 {
   padding: 1%;
   grid-area: h1;
   font-family: California-Signature;
-  font-weight: bold;
-  font-size: 300%;
+  color: #ced4da;
+  font-size: 350%;
 }
 @media (min-width: 480px) {
   body header h1 {
@@ -86,6 +94,7 @@ body header nav div ul {
   }
 }
 body header nav div ul li {
+  font-family: Domine;
   text-align: center;
   display: inline;
   font-weight: bold;
@@ -143,12 +152,14 @@ body header nav a img:hover {
   }
 }
 body main h2 {
+  font-family: Domine;
   margin: 1.5%;
   padding: 0.5%;
   text-decoration: underline;
   text-align: center;
   grid-area: h2;
   font-weight: bold;
+  font-size: 150%;
 }
 @media (min-width: 480px) {
   body main h2 {
@@ -178,10 +189,8 @@ body main h3 {
 }
 body main h4 {
   font-weight: bold;
-}
-body main h5 {
-  font-weight: bold;
   text-decoration: underline;
+  font-size: 125%;
 }
 body footer {
   background-color: #3b3a30;
@@ -228,12 +237,13 @@ body footer .copyright #copy {
 
 /*estilos particulares al archivo index.html*/
 main .paragraph {
-  text-align: justify;
+  text-align: center;
   line-height: 250%;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 2%;
   padding-bottom: 2%;
+  font-size: 125%;
 }
 main #quote {
   text-align: center;
@@ -337,52 +347,102 @@ main #quote {
   }
 }
 
-.container-mine {
-  width: auto;
-  background-color: white;
-  width: auto;
-  background-color: white;
-  margin: 2%;
-  padding: 1%;
+/*estilos para laboral.html*/
+main .container-fluid {
+  margin-bottom: 10%;
 }
-.container-mine h3 {
-  margin: 0.5%;
-  padding: 0.5%;
-}
-.container-mine .laboral__details {
-  margin: 0.5%;
-  padding: 0.3%;
-}
-@media (min-width: 480px) {
-  .container-mine {
-    margin: 2%;
-    padding: 2%;
-  }
-  .container-mine .laboral__details {
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-  }
-}
-.container-mine img {
+main .container-fluid .carousel {
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+main .container-fluid .carousel ol {
+  padding: 2%;
+}
+main .container-fluid .carousel .carousel-inner {
+  padding: 3%;
+  width: 100%;
   display: block;
-  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 480px) {
-  .container-mine img {
-    width: 20%;
+  main .container-fluid .carousel .carousel-inner {
+    width: 90%;
   }
 }
 @media (min-width: 768px) {
-  .container-mine img {
-    width: 25%;
+  main .container-fluid .carousel .carousel-inner {
+    width: 85%;
   }
 }
 @media (min-width: 1024px) {
-  .container-mine img {
-    width: 20%;
+  main .container-fluid .carousel .carousel-inner {
+    width: 80%;
+  }
+}
+main .container-fluid .carousel .carousel-inner .carousel-item img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item img {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item img {
+    width: 95%;
+  }
+}
+@media (min-width: 1024px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item img {
+    width: 95%;
+  }
+}
+main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+  font-size: 50%;
+  margin-bottom: 0%;
+  padding-bottom: 1% l;
+}
+@media (min-width: 480px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-size: 80%;
+  }
+}
+@media (min-width: 768px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-size: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+    font-size: 80%;
+  }
+}
+main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 150%;
+  margin: 0.5%;
+  padding: 0.5%;
+  color: black;
+  background-color: white;
+}
+main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption .laboral__details {
+  margin: 0.5%;
+  padding: 0.3%;
+  color: black;
+  background-color: white;
+}
+@media (min-width: 480px) {
+  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+    margin: 2%;
+    padding: 2%;
+  }
+  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption .laboral__details {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
   }
 }
 
@@ -422,8 +482,6 @@ main #quote {
     gap: 1vw;
     align-items: center;
     justify-items: center;
-    margin-bottom: 10%;
-    margin-left: 0%;
   }
 }
 @media (min-width: 1024px) {
@@ -432,8 +490,6 @@ main #quote {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "item-1 item-1 item-1" "item-2 item-3 item-4" "item-5 item-6 item-7";
     gap: 1vw;
-    margin-bottom: 10%;
-    margin-left: 0%;
   }
 }
 .containerGrid .item-1 {
@@ -508,8 +564,8 @@ main .contacto form #button button {
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: black;
-  background-color: #93ACB5;
+  color: #ced4da;
+  background-color: #022444;
   border-color: black;
 }
 main .contacto form #button button:focus {
