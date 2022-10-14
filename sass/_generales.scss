@@ -3,7 +3,6 @@
     @include box (0%, 0%);
 }
 body{
-    font-family: 'Bitter', sans-serif;
     text-align: $align;
     @extend .extendFlex;
     min-height: 100vh;
@@ -23,8 +22,8 @@ body{
             @include box (0%, 1%);
             grid-area: h1;
             font-family: California-Signature;
-            font-weight: bold;
-            font-size: 300%;
+            color: #ced4da;
+            font-size: 350%;
             @media(min-width:480px){
                 font-size: 450%;
             }
@@ -46,6 +45,7 @@ body{
                         margin-left: auto;
                     }
                     li{
+                        font-family: Domine;
                         text-align: $align;
                         display: inline;
                         font-weight: bold;
@@ -89,11 +89,13 @@ body{
                 }
     main{
         h2 {
+            font-family: Domine;
             @include box (1.5%, 0.5%);
             text-decoration: underline;
             text-align: $align;
             grid-area: h2;
             font-weight: bold;
+            font-size: 150%;
             @media (min-width:480px){
                 font-size: 150%;
             }
@@ -114,10 +116,8 @@ body{
         }
         h4{
             font-weight: bold;
-        }
-        h5{
-            font-weight: bold;
             text-decoration: underline;
+            font-size: 125%;
         }
     }
     footer{

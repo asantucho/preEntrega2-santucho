@@ -1,9 +1,20 @@
 @import url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bitter&family=Inter&display=swap);
-*{
-    font-family: "Inter", sans-serif;
-}
+@import url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
+
 @font-face{
     font-family: "California-Signature";
     src: url(../font/California\ Signature\ Italic.otf);
+}
+@font-face{
+    font-family: "Domine";
+    src: url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
+}
+@font-face {
+    font-family: "Bitter";
+    src: url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(https://fonts.googleapis.com/css2?family=Bitter&family=Inter&display=swap);
 }
