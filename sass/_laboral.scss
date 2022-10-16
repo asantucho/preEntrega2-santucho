@@ -1,0 +1,68 @@
+/*estilos para laboral.html*/
+main{
+    .container-fluid{
+        margin-bottom: 5%;
+        .carousel{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            .carousel-inner{
+                padding: 3%;
+                width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                @media (min-width:480px){
+                    width: 90%
+                }
+                @media (min-width:768px){
+                    width: 85%;
+                }
+                @media (min-width:1024px){
+                    width: 80%;
+                }
+                .carousel-item{
+                    img {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                        @media (min-width:480px){
+                            width: 100%;
+                        }
+                        @media (min-width:768px){
+                            width: 100%;
+                        }
+                        @media (min-width:1024px){
+                            width: 100%;
+                        }
+                    }
+                    .caption{
+                        font-size: 50%;
+                        @media (min-width:480px){
+                        font-size: 80%;
+                        }
+                        @media (min-width:768px){
+                            font-size: 80%;
+                        }
+                        @media (min-width:1024px){
+                            font-size: 80%;
+                        }
+                        margin-bottom: 0%;
+                        padding-bottom: 1%l;
+                        h3 {
+                            font-size: 150%;
+                            color: black;
+                            background-color: white;
+                            margin: 0%;
+                        }
+                        p{
+                            color: black;
+                            background-color: white;
+                            padding: 0.5%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

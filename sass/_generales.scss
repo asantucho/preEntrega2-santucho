@@ -1,0 +1,175 @@
+/*estilos comunes a todos los html*/
+*{
+    @include box (0%, 0%);
+}
+body{
+    text-align: $align;
+    @extend .extendFlex;
+    min-height: 100vh;
+    background-color: #FEFDFF;
+    @media(min-width:480px){
+        background-color: #EDF0DA;
+    }
+    @media(min-width:1024px){
+        background-color: #DADDD8;
+    }
+    header {
+        background-color: $color;
+        color: black;
+        text-align: $align;
+        grid-area: header;
+        h1{
+            @include box (0%, 1%);
+            grid-area: h1;
+            font-family: California-Signature;
+            color: #ced4da;
+            font-size: 350%;
+            @media(min-width:480px){
+                font-size: 450%;
+            }
+            @media (min-width:768px){
+                font-size: 525%; 
+            }
+            @media(min-width:1024px){
+                font-size: 600%;
+            }
+        }
+        nav{
+            div{
+                ul{
+                    list-style-type: none;
+                    padding: 0.5%;
+                    text-align: $align;
+                    @media (min-width:992px){
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    li{
+                        font-family: Domine;
+                        text-align: $align;
+                        display: inline;
+                        font-weight: bold;
+                        padding: 1%;
+                        @media(min-width:992px){
+                            width: 17vw;
+                        }
+                    }
+                    li:hover{
+                        filter: opacity(0);
+                        filter: contrast(100%);
+                        background-color: #8d1812;
+                    }
+                    
+                }
+            }
+            a{
+                text-decoration: none;
+                img:hover{
+                    animation: rotation 4s ease;
+                }
+                }
+            }
+        }
+    @keyframes rotation {
+                    0% {
+                        transform: scale(1.5);
+                    }
+                    25% {
+                        transform: rotate(90deg) scale(1.5);
+                    }
+                    50% {
+                        transform: rotate(180deg) scale(1.5);
+                    }
+                    75% {
+                        transform: rotate(270deg) scale(1.5);
+                    }
+                    100% {
+                        transform: rotate(360deg) scale(1.5);
+                    }
+                }
+    main{
+        h2 {
+            font-family: Domine;
+            @include box (1.5%, 0.5%);
+            text-decoration: underline;
+            text-align: $align;
+            grid-area: h2;
+            font-weight: bold;
+            font-size: 150%;
+            @media (min-width:480px){
+                font-size: 150%;
+            }
+            @media (min-width:768px){
+                font-size: 175%;
+            }
+        }
+        h3{
+            @include box (0.5%, 1%);
+            text-decoration: underline;
+            text-align: $align;
+            @media (min-width:480px){
+                font-size: 125%;
+            }
+            @media (min-width:768px){
+                font-size: 150%;
+            }
+        }
+        h4{
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 125%;
+        }
+    }
+    footer{
+        background-color: #3b3a30;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        color: #ced4da;
+        padding-top: 1%;
+        .pieDePagina{
+            margin-left: 0;
+            margin-right: 0;
+            text-align: center;
+            color: #ced4da;
+            padding-top: 1%;
+            .detalles{
+                .infoEstudio{
+                    font-size: 90%;
+                    padding-top: 1%;
+                }
+            }
+            .redes{
+                p{
+                    a{
+                        img{
+                            width: 5%;
+                            padding: 0.5%;
+                            margin: 1%;
+                            filter: invert(0.8);
+                        }
+                        img:hover{
+                            transform: scale(1.3);
+                            filter: opacity(1);
+                            transition: all 0.3s ease;
+                        }
+                        #facebook--brand{
+                            width: 3.5%;
+                        }
+                    }
+                }
+            }               
+        }
+        .copyright {
+            margin-left: 0;
+            margin-right: 0;
+            #copy{
+                text-align: $align;
+                color: #ced4da;
+                padding-top: 2%
+            }
+        }
+    }
+}
+
+
