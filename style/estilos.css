@@ -349,15 +349,12 @@ main #quote {
 
 /*estilos para laboral.html*/
 main .container-fluid {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 main .container-fluid .carousel {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-main .container-fluid .carousel ol {
-  padding: 2%;
 }
 main .container-fluid .carousel .carousel-inner {
   padding: 3%;
@@ -388,65 +385,56 @@ main .container-fluid .carousel .carousel-inner .carousel-item img {
 }
 @media (min-width: 480px) {
   main .container-fluid .carousel .carousel-inner .carousel-item img {
-    width: 95%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
   main .container-fluid .carousel .carousel-inner .carousel-item img {
-    width: 95%;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
   main .container-fluid .carousel .carousel-inner .carousel-item img {
-    width: 95%;
+    width: 100%;
   }
 }
-main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+main .container-fluid .carousel .carousel-inner .carousel-item .caption {
   font-size: 50%;
   margin-bottom: 0%;
   padding-bottom: 1% l;
 }
 @media (min-width: 480px) {
-  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+  main .container-fluid .carousel .carousel-inner .carousel-item .caption {
     font-size: 80%;
   }
 }
 @media (min-width: 768px) {
-  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+  main .container-fluid .carousel .carousel-inner .carousel-item .caption {
     font-size: 80%;
   }
 }
 @media (min-width: 1024px) {
-  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
+  main .container-fluid .carousel .carousel-inner .carousel-item .caption {
     font-size: 80%;
   }
 }
-main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+main .container-fluid .carousel .carousel-inner .carousel-item .caption h3 {
   font-size: 150%;
-  margin: 0.5%;
+  color: black;
+  background-color: white;
+  margin: 0%;
+}
+main .container-fluid .carousel .carousel-inner .carousel-item .caption p {
+  color: black;
+  background-color: white;
   padding: 0.5%;
-  color: black;
-  background-color: white;
-}
-main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption .laboral__details {
-  margin: 0.5%;
-  padding: 0.3%;
-  color: black;
-  background-color: white;
-}
-@media (min-width: 480px) {
-  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption {
-    margin: 2%;
-    padding: 2%;
-  }
-  main .container-fluid .carousel .carousel-inner .carousel-item .carousel-caption .laboral__details {
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-  }
 }
 
 /*estilos civil.html*/
+.carousel-caption p {
+  background-color: white;
+}
+
 .containerGrid {
   grid-template-columns: 1fr;
   grid-template-rows: repeat 7, 1fr;
