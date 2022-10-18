@@ -93,9 +93,8 @@ body{
             @include box (1.5%, 0.5%);
             text-decoration: underline;
             text-align: $align;
-            grid-area: h2;
             font-weight: bold;
-            font-size: 150%;
+            font-size: 125%;
             @media (min-width:480px){
                 font-size: 150%;
             }
@@ -105,9 +104,9 @@ body{
         }
         h3{
             @include box (0.5%, 1%);
-            text-decoration: underline;
             text-align: $align;
             font-family: $font-family;
+            font-size: 120%;
             @media (min-width:480px){
                 font-size: 125%;
             }
@@ -118,7 +117,7 @@ body{
         h4{
             font-weight: bold;
             text-decoration: underline;
-            font-size: 125%;
+            font-size: 105%;
             font-family: $font-family;
         }
     }

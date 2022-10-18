@@ -1,15 +1,17 @@
 /*estilos particulares al archivo index.html*/
 main{
-    img{
-        width: 100%;
-        @media (min-width:480px) {
+    .team{
+        img{
             width: 100%;
-        }
-        @media (min-width: 764px){
+            @media (min-width:480px) {
+                width: 100%;
+            }
+            @media (min-width: 764px){
+                width: 100%;
+            }
+            @media (min-width:1024px){
             width: 100%;
-        }
-        @media (min-width:1024px){
-        width: 100%;
+            }
         }
     }
     .flex-mine{
@@ -21,30 +23,39 @@ main{
             display: flex;
             flex-direction: row;
             justify-content: center;
-            .card{
-                margin: 2%;
-                padding: 2%;
-                border: solid black;
-                border-radius: 5%;
-                .btn{
-                    background-color: $color;
-                    & :focus{
-                        background-color: #8d1812;
-                    }
+        }
+        .card{
+            margin: 2%;
+            padding: 2%;
+            border: solid black;
+            border-radius: 5%;
+            img {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                @media (min-width:480px){
+                    width: 100%;
                 }
-                .card-img-top {
-                    margin: auto;
-                    display: block;
-                    width: 25%;
-                    @media (min-width:480px){
-                        width: 75%;
-                    }
-                    @media (min-width:764px){
-                        width: 75%;
-                    }
-                    @media (min-width:1024px){
-                        width: 75%;
-                    }
+                @media (min-width:764px){
+                    width: 75%;
+                }
+                @media (min-width:1024px){
+                    width: 100%;
+                }
+            }
+            .card-body{
+                h5{
+                    font-size: 90%;
+                }
+                p{
+                    font-size: 90%;
+                }
+                a{
+                    background-color: $color;
+                }
+                a:focus{
+                    background-color: #8d1812;
                 }
             }
         }
@@ -56,6 +67,8 @@ main{
         padding-right:10%;
         padding-top: 2%;
         padding-bottom: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
         font-size: 95%;
         @media (min-width:480px){
             font-size: 100%;
