@@ -1,7 +1,14 @@
 /*estilos para laboral.html*/
 main{
+    .section-description{
+        text-align: $align;
+        font-size: 115%;
+        @include box (0.5%, 0.5%);
+        font-style: italic;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
     .container-fluid{
-        margin-bottom: 5%;
         .carousel{
             width: 80%;
             margin-left: auto;
@@ -48,20 +55,92 @@ main{
                             font-size: 80%;
                         }
                         margin-bottom: 0%;
-                        padding-bottom: 1%l;
+                        padding-bottom: 1%;
+                        border: black solid;
+                        background-color: white;
+                        color: black;
                         h3 {
                             font-size: 150%;
-                            color: black;
-                            background-color: white;
                             margin: 0%;
                         }
                         p{
-                            color: black;
-                            background-color: white;
                             padding: 0.5%;
+                            font-size: 130%;
                         }
                     }
                 }
+            }
+        }
+    }
+    .containerGrid{
+        .item-2{
+            grid-area: item-2;
+        }
+        .item-3{
+            grid-area: item-3;
+        }
+        .item-4{
+            grid-area: item-4;
+        }
+        .item-5{
+            grid-area: item-5;
+        }
+        .item-6{
+            grid-area: item-6;
+        }
+        .item-7{
+            grid-area: item-7;
+        }
+        @extend .extendGrids;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (7, 1fr);
+        grid-template-areas: 
+        "item-1"
+        "item-2"
+        "item-3"
+        "item-4"
+        "item-5" 
+        "item-6"
+        "item-7";
+        gap: 1vw;
+        margin-bottom: 10%;
+        margin-left: 0%;
+        padding: 0%;
+        @media(min-width:480px){
+            grid-template-columns:1fr 1fr;
+            grid-template-rows: repeat (6, 1fr);
+            grid-template-areas: 
+            "item-1 item-1"
+            "item-2 item-3"
+            "item-4 item-5" 
+            "item-6 item-7";
+            gap: 1vw;
+            align-items: $align;
+            justify-items: $align;
+        }
+        @media(min-width:1024px){
+            grid-template-rows: 0.2fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "item-1 item-1 item-1"
+            "item-2 item-3 item-4"
+            "item-5 item-6 item-7";
+            gap: 1vw;
+        }
+        .item-1{
+            grid-area: item-1;
+            @include box (0%, 1%);
+        }
+        .item{
+            border: solid black;
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+            background-color: white;
+            @include size (100%, auto);
+            .item h5{
+                text-decoration: underline;
+                font-weight: bold;
             }
         }
     }

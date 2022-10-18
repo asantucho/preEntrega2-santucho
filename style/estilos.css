@@ -9,7 +9,7 @@
   flex-direction: column;
 }
 
-.extendGrids, .containerGrid, .flex__container {
+.extendGrids, .containerGrid, main .containerGrid, .flex__container {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -79,7 +79,7 @@ body header h1 {
 }
 @media (min-width: 1024px) {
   body header h1 {
-    font-size: 600%;
+    font-size: 650%;
   }
 }
 body header nav div ul {
@@ -176,6 +176,7 @@ body main h3 {
   padding: 1%;
   text-decoration: underline;
   text-align: center;
+  font-family: Domine;
 }
 @media (min-width: 480px) {
   body main h3 {
@@ -191,6 +192,7 @@ body main h4 {
   font-weight: bold;
   text-decoration: underline;
   font-size: 125%;
+  font-family: Domine;
 }
 body footer {
   background-color: #3b3a30;
@@ -207,9 +209,15 @@ body footer .pieDePagina {
   color: #ced4da;
   padding-top: 1%;
 }
+body footer .pieDePagina .detalles h4 {
+  font-family: Domine;
+}
 body footer .pieDePagina .detalles .infoEstudio {
   font-size: 90%;
   padding-top: 1%;
+}
+body footer .pieDePagina .redes h4 {
+  font-family: Domine;
 }
 body footer .pieDePagina .redes p a img {
   width: 5%;
@@ -236,6 +244,69 @@ body footer .copyright #copy {
 }
 
 /*estilos particulares al archivo index.html*/
+main img {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  main img {
+    width: 100%;
+  }
+}
+@media (min-width: 764px) {
+  main img {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  main img {
+    width: 100%;
+  }
+}
+main .flex-mine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  main .flex-mine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  main .flex-mine .card {
+    margin: 2%;
+    padding: 2%;
+    border: solid black;
+    border-radius: 5%;
+  }
+  main .flex-mine .card .btn {
+    background-color: #022444;
+  }
+  main .flex-mine .card .btn :focus {
+    background-color: #8d1812;
+  }
+  main .flex-mine .card .card-img-top {
+    margin: auto;
+    display: block;
+    width: 25%;
+  }
+}
+@media (min-width: 480px) and (min-width: 480px) {
+  main .flex-mine .card .card-img-top {
+    width: 75%;
+  }
+}
+@media (min-width: 480px) and (min-width: 764px) {
+  main .flex-mine .card .card-img-top {
+    width: 75%;
+  }
+}
+@media (min-width: 480px) and (min-width: 1024px) {
+  main .flex-mine .card .card-img-top {
+    width: 75%;
+  }
+}
 main .paragraph {
   text-align: center;
   line-height: 250%;
@@ -243,7 +314,25 @@ main .paragraph {
   padding-right: 10%;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 125%;
+  font-size: 95%;
+}
+@media (min-width: 480px) {
+  main .paragraph {
+    font-size: 100%;
+  }
+}
+@media (min-width: 764px) {
+  main .paragraph {
+    font-size: 110%;
+  }
+}
+@media (min-width: 1024px) {
+  main .paragraph {
+    font-size: 110%;
+  }
+}
+main .paragraph h3 {
+  text-decoration: none;
 }
 main #quote {
   text-align: center;
@@ -293,6 +382,10 @@ main #quote {
     margin: 0%;
     padding: 0%;
     border: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
   }
 }
 @media (min-width: 480px) {
@@ -348,8 +441,14 @@ main #quote {
 }
 
 /*estilos para laboral.html*/
-main .container-fluid {
-  margin-bottom: 5%;
+main .section-description {
+  text-align: center;
+  font-size: 115%;
+  margin: 0.5%;
+  padding: 0.5%;
+  font-style: italic;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 main .container-fluid .carousel {
   width: 80%;
@@ -401,7 +500,10 @@ main .container-fluid .carousel .carousel-inner .carousel-item img {
 main .container-fluid .carousel .carousel-inner .carousel-item .caption {
   font-size: 50%;
   margin-bottom: 0%;
-  padding-bottom: 1% l;
+  padding-bottom: 1%;
+  border: black solid;
+  background-color: white;
+  color: black;
 }
 @media (min-width: 480px) {
   main .container-fluid .carousel .carousel-inner .carousel-item .caption {
@@ -420,21 +522,77 @@ main .container-fluid .carousel .carousel-inner .carousel-item .caption {
 }
 main .container-fluid .carousel .carousel-inner .carousel-item .caption h3 {
   font-size: 150%;
-  color: black;
-  background-color: white;
   margin: 0%;
 }
 main .container-fluid .carousel .carousel-inner .carousel-item .caption p {
-  color: black;
-  background-color: white;
   padding: 0.5%;
+  font-size: 130%;
+}
+main .containerGrid {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat 7, 1fr;
+  grid-template-areas: "item-1" "item-2" "item-3" "item-4" "item-5" "item-6" "item-7";
+  gap: 1vw;
+  margin-bottom: 10%;
+  margin-left: 0%;
+  padding: 0%;
+}
+main .containerGrid .item-2 {
+  grid-area: item-2;
+}
+main .containerGrid .item-3 {
+  grid-area: item-3;
+}
+main .containerGrid .item-4 {
+  grid-area: item-4;
+}
+main .containerGrid .item-5 {
+  grid-area: item-5;
+}
+main .containerGrid .item-6 {
+  grid-area: item-6;
+}
+main .containerGrid .item-7 {
+  grid-area: item-7;
+}
+@media (min-width: 480px) {
+  main .containerGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat 6, 1fr;
+    grid-template-areas: "item-1 item-1" "item-2 item-3" "item-4 item-5" "item-6 item-7";
+    gap: 1vw;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  main .containerGrid {
+    grid-template-rows: 0.2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "item-1 item-1 item-1" "item-2 item-3 item-4" "item-5 item-6 item-7";
+    gap: 1vw;
+  }
+}
+main .containerGrid .item-1 {
+  grid-area: item-1;
+  margin: 0%;
+  padding: 1%;
+}
+main .containerGrid .item {
+  border: solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  background-color: white;
+  height: 100%;
+  width: auto;
+}
+main .containerGrid .item .item h5 {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 /*estilos civil.html*/
-.carousel-caption p {
-  background-color: white;
-}
-
 .containerGrid {
   grid-template-columns: 1fr;
   grid-template-rows: repeat 7, 1fr;
