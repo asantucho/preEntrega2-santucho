@@ -66,7 +66,7 @@ main{
                             font-size: 93%;
                         }
                         @media (min-width:1024px){
-                            font-size: 95%;
+                            font-size: 100%;
                         }
                     }
                 }
@@ -121,7 +121,7 @@ main{
         "item-3"
         "item-4";
         gap: 1vw;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         margin-left: 0%;
         padding: 0%;
         @media(min-width:764px){
@@ -141,6 +141,21 @@ main{
             "item-1 item-1 item-1"
             "item-2 item-3 item-4";
             gap: 1vw;
+        }
+    }
+    .doubts{
+        padding: 1.5%;
+        margin-bottom: 3%;
+        font-style: italic;
+        @media (min-width:480px){
+            font-size: 100%;
+        }
+        @media (min-width:768px){
+            font-size: 100%;
+        }
+        @media (min-width:1024px){
+            font-size: 110%;
+            margin-bottom: 1.5%;
         }
     }
 }

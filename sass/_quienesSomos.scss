@@ -42,7 +42,6 @@
         }
         .container_info{
             @media(min-width:480px){
-                border: solid black;
                 padding: 3%;
             }
             @media(min-width:1024px){
@@ -50,23 +49,26 @@
                 flex-direction: row;
                 justify-content: start;
                 padding: 2%;
-                margin:2%;
+                margin:0%;
                 text-align: justify;
-                border: solid black;
                 background-color: white;
             }
             img{
-                @include size (20%, 30%);
+                @include size (30%, 40%);
                 @media(min-width:480px) {
-                    @include size (40%, 40%);
+                    @include size (40%, 50%);
+                }
+                @media(min-width:764px) {
+                    @include size (50%, 60%);
                 }
                 @media(min-width:1024px){
                     @include size (25%, 20%);
                     padding: 1%;
-                    padding-top: 3%;
+                    padding-top: 1%;
                 }
             }
             .descripcion{
+                font-size: 95%;
                 @media(min-width:1024px){
                     display: flex;
                     flex-direction: column;
@@ -75,8 +77,10 @@
                     justify-content: center;
                 }
                 h3 {
+                    padding: 5%;
                     @media(min-width:1024px){
                         text-align: left;
+                        padding: 1%;
                         padding-left: 0%;
                     }
                 }
