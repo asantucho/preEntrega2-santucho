@@ -27,10 +27,11 @@
         gap: 2vw;
     }
     .little__container{
+        background-color: white;
         @include box (2%, 2%);
+        border: solid black;
         @media(min-width:480px){
             @include box (2%, 2%);
-            border: solid black;
         }
         @media(min-width:1024px){
             @include box (0%, 0%);
@@ -51,7 +52,6 @@
                 padding: 2%;
                 margin:0%;
                 text-align: justify;
-                background-color: white;
             }
             img{
                 @include size (30%, 40%);

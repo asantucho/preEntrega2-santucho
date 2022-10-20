@@ -212,7 +212,7 @@ body footer .pieDePagina .redes p a img {
   padding: 0.5%;
   margin: 1%;
   filter: invert(0.8);
-  width: 8%;
+  width: 7%;
 }
 @media (min-width: 576px) {
   body footer .pieDePagina .redes p a img {
@@ -236,7 +236,7 @@ body footer .pieDePagina .redes p a img:hover {
   transition: all 0.3s ease;
 }
 body footer .pieDePagina .redes p a #facebook--brand {
-  width: 5%;
+  width: 4.5%;
 }
 @media (min-width: 576px) {
   body footer .pieDePagina .redes p a #facebook--brand {
@@ -301,7 +301,6 @@ main .flex-mine .card {
   margin: 2%;
   padding: 2%;
   border: solid black;
-  border-radius: 10%;
 }
 main .flex-mine .card img {
   width: 90%;
@@ -398,14 +397,15 @@ main #quote {
   }
 }
 .flex__container .little__container {
+  background-color: white;
   margin: 2%;
   padding: 2%;
+  border: solid black;
 }
 @media (min-width: 480px) {
   .flex__container .little__container {
     margin: 2%;
     padding: 2%;
-    border: solid black;
   }
 }
 @media (min-width: 1024px) {
@@ -432,7 +432,6 @@ main #quote {
     padding: 2%;
     margin: 0%;
     text-align: justify;
-    background-color: white;
   }
 }
 .flex__container .little__container .container_info img {
@@ -577,19 +576,21 @@ main .container-fluid .carousel-inner .carousel-item .caption {
   }
 }
 main .containerGrid {
+  max-width: 95%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat 4, 1fr;
   grid-template-areas: "item-1" "item-2" "item-3" "item-4";
   gap: 1vw;
   margin-bottom: 5%;
-  margin-left: 0%;
   padding: 0%;
 }
 main .containerGrid .item {
   border: solid black;
   display: flex;
   flex-direction: column;
-  padding: 2%;
+  padding: 3%;
   background-color: white;
   height: 100%;
   width: auto;
