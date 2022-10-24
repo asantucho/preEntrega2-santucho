@@ -6,10 +6,10 @@ main{
             @media (min-width:480px) {
                 width: 100%;
             }
-            @media (min-width: 764px){
+            @media (min-width: 768px){
                 width: 100%;
             }
-            @media (min-width:1024px){
+            @media (min-width:992px){
             width: 100%;
             }
         }
@@ -26,6 +26,7 @@ main{
             justify-content: center;
         }
         .card{
+            width: 18rem;
             margin: 2%;
             padding: 2%;
             border: solid black;
@@ -37,10 +38,10 @@ main{
                 @media (min-width:480px){
                     width: 100%;
                 }
-                @media (min-width:764px){
+                @media (min-width:768px){
                     width: 100%;
                 }
-                @media (min-width:1024px){
+                @media (min-width:992px){
                     width: 100%;
                 }
             }
@@ -73,10 +74,10 @@ main{
         @media (min-width:480px){
             font-size: 100%;
         }
-        @media (min-width:764px){
+        @media (min-width:768px){
             font-size: 110%;
         }
-        @media (min-width:1024px){
+        @media (min-width:992px){
             font-size: 110%;
         }
         h3{

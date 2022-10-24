@@ -24,7 +24,7 @@ body{
             @media (min-width:768px){
                 font-size: 525%; 
             }
-            @media(min-width:1024px){
+            @media(min-width:992px){
                 font-size: 650%;
             }
         }
@@ -39,7 +39,7 @@ body{
                         margin-left: auto;
                     }
                     li{
-                        font-family: Domine;
+                        font-family: $font-family;
                         text-align: $align;
                         display: inline;
                         font-weight: bold;
@@ -89,6 +89,7 @@ body{
             text-align: $align;
             font-weight: bold;
             font-size: 125%;
+            padding-bottom: 1%;
             @media (min-width:480px){
                 font-size: 150%;
             }
@@ -113,6 +114,9 @@ body{
             text-decoration: underline;
             font-size: 105%;
             font-family: $font-family;
+        }
+        p {
+            font-family: Inter, sans-serif;
         }
     }
     footer{
