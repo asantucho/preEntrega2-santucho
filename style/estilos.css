@@ -159,6 +159,7 @@ body main h2 {
 @media (min-width: 768px) {
   body main h2 {
     font-size: 175%;
+    padding-bottom: 0%;
   }
 }
 body main h3 {
@@ -204,6 +205,22 @@ body footer .pieDePagina {
 }
 body footer .pieDePagina .detalles h4 {
   font-family: Domine;
+  font-size: 110%;
+}
+@media (min-width: 576px) {
+  body footer .pieDePagina .detalles h4 {
+    font-size: 120%;
+  }
+}
+@media (min-width: 768px) {
+  body footer .pieDePagina .detalles h4 {
+    font-size: 100%;
+  }
+}
+@media (min-width: 992px) {
+  body footer .pieDePagina .detalles h4 {
+    font-size: 100%;
+  }
 }
 body footer .pieDePagina .detalles .infoEstudio {
   font-size: 90%;
@@ -211,6 +228,22 @@ body footer .pieDePagina .detalles .infoEstudio {
 }
 body footer .pieDePagina .redes h4 {
   font-family: Domine;
+  font-size: 110%;
+}
+@media (min-width: 576px) {
+  body footer .pieDePagina .redes h4 {
+    font-size: 120%;
+  }
+}
+@media (min-width: 768px) {
+  body footer .pieDePagina .redes h4 {
+    font-size: 100%;
+  }
+}
+@media (min-width: 992px) {
+  body footer .pieDePagina .redes h4 {
+    font-size: 100%;
+  }
 }
 body footer .pieDePagina .redes p a img {
   padding: 0.5%;
@@ -220,7 +253,7 @@ body footer .pieDePagina .redes p a img {
 }
 @media (min-width: 576px) {
   body footer .pieDePagina .redes p a img {
-    width: 6.5%;
+    width: 6%;
   }
 }
 @media (min-width: 768px) {
@@ -240,11 +273,11 @@ body footer .pieDePagina .redes p a img:hover {
   transition: all 0.3s ease;
 }
 body footer .pieDePagina .redes p a #facebook--brand {
-  width: 4.5%;
+  width: 4.2%;
 }
 @media (min-width: 576px) {
   body footer .pieDePagina .redes p a #facebook--brand {
-    width: 4.7%;
+    width: 4.3%;
   }
 }
 @media (min-width: 768px) {
@@ -549,6 +582,14 @@ main #quote {
 }
 
 /*estilos para laboral.html y civil.html*/
+@media (min-width: 992px) {
+  main h2 {
+    font-size: 105%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 0%;
+  }
+}
 main .section-description {
   text-align: center;
   font-size: 90%;
@@ -565,6 +606,13 @@ main .section-description {
 @media (min-width: 768px) {
   main .section-description {
     font-size: 105%;
+  }
+}
+@media (min-width: 992px) {
+  main .section-description {
+    font-size: 105%;
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 main .container-fluid {
