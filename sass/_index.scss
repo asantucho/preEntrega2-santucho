@@ -46,8 +46,10 @@ main{
                 }
             }
             .card-body{
-                h5{
+                h3{
+                    font-family: Inter, sans-serif;
                     font-size: 100%;
+                    font-weight: bold;
                     @media (min-width:480px){
                         font-size: 100%;
                     }
@@ -119,8 +121,10 @@ main{
         @media (min-width:992px){
             font-size: 110%;
         }
-        h3{
+        h4{
             text-decoration: none;
+            font-size: 120%;
+            font-weight: normal;
         }
     }
     #quote{

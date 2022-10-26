@@ -1,7 +1,6 @@
 /*Variables, clases para extends y mixins*/
 /*variables*/
 /*extends*/
-@import url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bitter&family=Inter&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
 .extendFlex, body {
@@ -23,10 +22,6 @@
 @font-face {
   font-family: "Domine";
   src: url(https://fonts.googleapis.com/css2?family=Bitter&family=Domine&family=Inter&display=swap);
-}
-@font-face {
-  font-family: "Bitter";
-  src: url(https://fonts.googleapis.com/css2?family=Bitter&display=swap);
 }
 @font-face {
   font-family: "Inter";
@@ -361,36 +356,38 @@ main .flex-mine .card img {
     width: 100%;
   }
 }
-main .flex-mine .card .card-body h5 {
+main .flex-mine .card .card-body h3 {
+  font-family: Inter, sans-serif;
   font-size: 100%;
+  font-weight: bold;
 }
 @media (min-width: 480px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 510px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 619px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 110%;
   }
 }
 @media (min-width: 910px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 992px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 100%;
   }
 }
 @media (min-width: 1370px) {
-  main .flex-mine .card .card-body h5 {
+  main .flex-mine .card .card-body h3 {
     font-size: 110%;
   }
 }
@@ -464,8 +461,10 @@ main .paragraph {
     font-size: 110%;
   }
 }
-main .paragraph h3 {
+main .paragraph h4 {
   text-decoration: none;
+  font-size: 120%;
+  font-weight: normal;
 }
 main #quote {
   text-align: center;
