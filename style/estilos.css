@@ -369,6 +369,11 @@ main .flex-mine .card .card-body h5 {
     font-size: 100%;
   }
 }
+@media (min-width: 510px) {
+  main .flex-mine .card .card-body h5 {
+    font-size: 100%;
+  }
+}
 @media (min-width: 619px) {
   main .flex-mine .card .card-body h5 {
     font-size: 110%;
@@ -395,6 +400,16 @@ main .flex-mine .card .card-body p {
 @media (min-width: 480px) {
   main .flex-mine .card .card-body p {
     font-size: 95%;
+  }
+}
+@media (min-width: 510px) {
+  main .flex-mine .card .card-body p {
+    font-size: 100%;
+  }
+}
+@media (min-width: 532px) {
+  main .flex-mine .card .card-body p {
+    font-size: 90%;
   }
 }
 @media (min-width: 619px) {
